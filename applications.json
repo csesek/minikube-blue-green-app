@@ -1,0 +1,29 @@
+{
+    "applications": 
+    [
+        {
+        "name": "foo",
+        "image": "hashicorp/http-echo",
+        "args": "-listen=:8081 -text=\"I am foo\"",
+        "port": 8081,
+        "traffic_weight": "25",
+        "replicas": 2
+        },
+        {
+        "name": "bar",
+        "image": "hashicorp/http-echo",
+        "args": "-listen=:8082 -text=\"I am bar\"",
+        "port": 8082,
+        "traffic_weight": "25",
+        "replicas": 3
+        },
+        {
+        "name": "boom",
+        "image": "hashicorp/http-echo",
+        "args": "-listen=:8083 -text=\"I am boom\"",
+        "port": 8083,
+        "traffic_weight": "50",
+        "replicas": 4
+        }
+    ]
+}
