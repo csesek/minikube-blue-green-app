@@ -12,11 +12,14 @@ minikube start --driver=virtualbox
 # Approach 1 (Without Terraform)
 
 Associated Files: 
+```
 a) blue-app-deployments.yaml
 b) green-app-deployments.yaml
 c) app-ingress.yaml
+```
 
-
+Commands:
+```
 Create Deployment:
 kubectl apply -f blue-app-deployments.yaml
 kubectl apply -f green-app-deployments.yaml
@@ -41,15 +44,21 @@ add the ingres ip in c:/windows/system32/drivers/etc/host
 192.168.59.101	blue-green.info
 
 Hit request to : http://blue-green.info/
-
+```
 Reference Documents:
+```
 https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/
 https://docs.nginx.com/nginx-service-mesh/tutorials/trafficsplit-deployments/
-
+```
 -------------------------------------
 # Approach 2 (With Terraform)
 
 Associated Files:
+```
 a) applications.json
 b) main.tf
+```
 
+Commands:
+```
+```
