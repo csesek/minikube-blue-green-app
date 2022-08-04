@@ -12,9 +12,9 @@ minikube start --driver=virtualbox
 # Approach 1 (Without Terraform)
 
 Associated Files: 
-blue-app-deployments.yaml
-green-app-deployments.yaml
-app-ingress.yaml
+a) blue-app-deployments.yaml
+b) green-app-deployments.yaml
+c) app-ingress.yaml
 
 
 Create Deployment:
@@ -50,6 +50,6 @@ https://docs.nginx.com/nginx-service-mesh/tutorials/trafficsplit-deployments/
 # Approach 2 (With Terraform)
 
 Associated Files:
-applications.json
-main.tf
+a) applications.json
+b) main.tf
 
