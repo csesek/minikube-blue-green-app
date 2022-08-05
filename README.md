@@ -64,4 +64,8 @@ b) main.tf
 
 Commands:
 ```
+terraform init
+terraform validate --json
+terraform plan
+terraform apply
 ```
