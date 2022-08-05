@@ -50,6 +50,9 @@ Reference Documents:
 https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/
 https://docs.nginx.com/nginx-service-mesh/tutorials/trafficsplit-deployments/
 ```
+
+Refer file Steps.docx for screenshot.
+
 -------------------------------------
 # Approach 2 (With Terraform)
 
