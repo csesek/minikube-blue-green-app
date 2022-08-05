@@ -1,4 +1,15 @@
- locals {
+ provider "kubernetes" {
+  config_context_cluster   = "minikube"
+}
+ 
+ resource "kubernetes_namespace" "_1-minikube-namespace" {
+  metadata {
+        name = "my-first-terraform-namespace"
+  }
+} 
+
+
+locals {
     # get json 
     applications_data = jsondecode(file("${path.module}/applications.json"))
 
